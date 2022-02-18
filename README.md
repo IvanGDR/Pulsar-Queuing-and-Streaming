@@ -52,18 +52,9 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 **3. Subscription:** Determines which consumer(s) a message should be delivered to. Each topic can have multiple subscriptions and a subscription can have one or more consumer group(s). There are three types of subscriptions that can co-exist on the same topic:
 
 &nbsp;
-Exclusive Subscription
-
-&nbsp;
-
-: For ***streaming*** use case. One consumer only in order to respect ordered consumption.
-Failover Subscription
-
-&nbsp;
-
-: For ***streaming*** use case. Two consumers but one active only in order to respect ordered consumption.
-Shared Subscription
-: For ***queuing*** use case. Multiple consumers can be actived, allowing consumption in an unordered manner.
+- Exclusive Subscription: For ***streaming*** use case. One consumer only in order to respect ordered consumption.
+- Failover Subscription: For ***streaming*** use case. Two consumers but one active only in order to respect ordered consumption.
+- Shared Subscription: For ***queuing*** use case. Multiple consumers can be actived, allowing consumption in an unordered manner.
 
 &nbsp;
 **4. Consumer:** It is the application that reads messages from Pulsar. These are grouped together for consuming messages. Each consumer group can have its own way of consuming the messages.

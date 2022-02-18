@@ -53,8 +53,14 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 
 &nbsp;
 Exclusive Subscription
+
+&nbsp;
+
 : For ***streaming*** use case. One consumer only in order to respect ordered consumption.
 Failover Subscription
+
+&nbsp;
+
 : For ***streaming*** use case. Two consumers but one active only in order to respect ordered consumption.
 Shared Subscription
 : For ***queuing*** use case. Multiple consumers can be actived, allowing consumption in an unordered manner.

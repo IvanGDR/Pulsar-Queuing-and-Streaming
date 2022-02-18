@@ -25,8 +25,6 @@ Namespace(s)      = Operative action(s)
 <p align="center">
 <img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154675909-bac357fe-895e-444b-8727-e120ca1ed2bc.png">
 </p>
-![858b6939](https://user-images.githubusercontent.com/67383481/154675909-bac357fe-895e-444b-8727-e120ca1ed2bc.png)
-
 <p align="center">
 Fig. 1: Apache Pulsar tenant facilities.
 </p>

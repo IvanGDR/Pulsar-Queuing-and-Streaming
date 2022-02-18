@@ -115,10 +115,9 @@ this cell has not been consumed yet.
 ## **Pulsar Arquitecture**
 In order to configurate a highly available Pulsar multicluster, the following is required:
 
-- A local ensemble zookeeper cluster (Pulsar and Bookeeper metadata)
+- A zookeeper ensemble (Local Zk for Pulsar and Bookeeper metadata and Global Zk for Store multicluster metadata)
 - A Bookeeper cluster (stateful storage layer)
 - Pulsar Broker(s) (stateless coordinator)
-- A global zookeeper cluster using local zookeeper nodes (Pulsar Configuration store multicluster metadata)
 &nbsp;
 <p align="center">
 <img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717565-1270b79e-352f-4a89-a051-5ccec5037926.png")

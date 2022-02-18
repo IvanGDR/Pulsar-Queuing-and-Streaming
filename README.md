@@ -59,8 +59,9 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 **4. Consumer:** It is the application that reads messages from Pulsar. These are grouped together for consuming messages. Each consumer group can have its own way of consuming the messages.
 
 &nbsp;
-
-![792253ae.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/0442fb10.png#center)
+<p align="center">
+<img width="600" height="500" https://user-images.githubusercontent.com/67383481/154716613-59cbf35e-cf4f-45ff-bc58-69478348b31e.png>
+</p>
 <p align="center">
 Fig. 2: Apache Pulsar Model and Message Consumption
 </p>

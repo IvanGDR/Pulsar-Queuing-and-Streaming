@@ -22,9 +22,8 @@ Namespace(s)      = Operative action(s)
 !!!
 ```
 &nbsp;
-<div style="text-align:center">
 ![858b6939](https://user-images.githubusercontent.com/67383481/154675909-bac357fe-895e-444b-8727-e120ca1ed2bc.png)
-</div>
+
 <p align="center">
 Fig. 1: Apache Pulsar tenant facilities.
 </p>

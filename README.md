@@ -74,7 +74,9 @@ Pulsar provides both **cummulative** acknowledgment and **individual** acknowled
 
 For both exclusive or failover subscriptions (streaming) cummulative or individual acknowledge can be applied. For shared subscription (queuing) only individual acknowledge is applicable.
 &nbsp;
-![2d5ac8dc.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/63b69c3b.png#center)
+<p align="center">
+<img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717167-c0d6053a-60e3-4416-bc38-9e5ba0323bd3.png")
+</p>
 <p align="center">
 Fig. 3: Cummulative (above) vs Individual (below) Message Acknowledgent, blue cells will be redelivered.
 </p>
@@ -86,7 +88,9 @@ A Pulsar cluster consists of 2 fundamental layers: a set of brokers as a serving
 Having said that, in Pulsar, messages can only be deleted after all the subscriptions have already consumed it (the messages are marked as acknowledged in their cursors). However, Pulsar also allows to keep messages for a longer time even after all subscriptions have already consumed them. This is done by configuring a message retention period.
 Additionally, Pulsar allows TTL, a message will automatically be marked as acknowledged if it is not consumed by any consumers within the configured TTL time period.
 &nbsp;
-![75a3a973.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/3a397bcd.png#center)
+<p align="center">
+<img width="600" height="https://user-images.githubusercontent.com/67383481/154717370-aa95330b-c0ac-4171-b500-5d8c6b3120a7.png")
+</p>
 <p align="center">
 Fig. 4: Pulsar message retention policies.
 </p>
@@ -109,7 +113,9 @@ In order to configurate a highly available Pulsar multicluster, the following is
 - Pulsar Broker(s) (stateless coordinator)
 - A global zookeeper cluster using local zookeeper nodes (Pulsar Configuration store multicluster metadata)
 &nbsp;
-![35977870.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/5ea2982d.png#center)
+<p align="center">
+<img width="600" height="https://user-images.githubusercontent.com/67383481/154717565-1270b79e-352f-4a89-a051-5ccec5037926.png")
+</p>
 <p align="center">
 Fig. 5: Pulsar arquitecture stack.
 </p>

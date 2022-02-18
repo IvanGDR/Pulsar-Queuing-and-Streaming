@@ -21,7 +21,7 @@ Propert(y/ies)    = Department(s)
 Namespace(s)      = Operative action(s)
 !!!
 &nbsp;
-![858b6939.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/427f30bc.png#center)
+![858b6939](https://user-images.githubusercontent.com/67383481/154675909-bac357fe-895e-444b-8727-e120ca1ed2bc.png)
 <p align="center">
 Fig. 1: Apache Pulsar tenant facilities.
 </p>

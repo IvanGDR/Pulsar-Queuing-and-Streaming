@@ -15,11 +15,10 @@ Apache Pulsar is an open-source distributed publish-subscrib messaging system wh
 ## **Tenant Implementation**
 On a high level view, Apache Pulsar has been conceived to support multi-tenant deployments. The key pieces that allows this configuration topology are: **properties** and **namespaces**.
 ```
-!!! note An analogy for this would be:
+!!! An analogy for this would be:
 Pulsar Cluster(s) = Company (Regional Branches)
 Propert(y/ies)    = Department(s)
 Namespace(s)      = Operative action(s)
-!!!
 ```
 &nbsp;
 <p align="center">

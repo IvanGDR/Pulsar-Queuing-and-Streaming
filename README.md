@@ -98,11 +98,16 @@ Fig. 4: Pulsar message retention policies.
 &nbsp;
 ```
 !!! Fig 4 interpretation
-Figure 4 shows how retention policies work with and without retention policy in place in a topic partition. Without retention policy, Grey cells can be deleted as these have been acknowledged by subscriptions A and B. Blue cells cannot be deleted yet as not acknowledged by subscription A. Green cells cannot be deleted as not acknoledged by any subscription.
+Figure 4 shows how retention policies work with and without retention policy in place in a topic partition.
+Without retention policy, Grey cells can be deleted as these have been acknowledged by subscriptions A and B. 
+Blue cells cannot be deleted yet as not acknowledged by subscription A. 
+Green cells cannot be deleted as not acknoledged by any subscription.
 
-Using retention policy, only grey cells can be marked as retained, for the configured time period, as both subscription A and B have consumed those messages.
+Using retention policy, only grey cells can be marked as retained, for the configured time period, as both 
+subscription A and B have consumed those messages.
 
-On this topic partition subscription B has a TTL in place, cell M10 has been marked as aknowledged even if this cell has not been consumed yet.
+On this topic partition subscription B has a TTL in place, cell M10 has been marked as aknowledged even if
+this cell has not been consumed yet.
 ```
 
 &nbsp;

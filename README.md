@@ -117,7 +117,7 @@ In order to configurate a highly available Pulsar multicluster, the following is
 
 - A zookeeper ensemble (Local Zk for Pulsar and Bookeeper metadata and Global Zk for Store multicluster metadata)
 - A Bookeeper cluster (Stateful storage layer)
-- Pulsar broker cluster (Stateless coordinator)
+- A Pulsar broker cluster (Stateless coordinator)
 &nbsp;
 <p align="center">
 <img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717565-1270b79e-352f-4a89-a051-5ccec5037926.png")

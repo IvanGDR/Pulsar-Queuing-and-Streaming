@@ -40,8 +40,10 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
         </tr>
     </thead>
 </table>
+
 &nbsp;
-```
+&nbsp;
+
 **1. Producer:** It is the application that sends messages to the topic and each message sent by the publisher is only stored once on a topic partition. It uses a Routing to determine which internal topic a message should be published to.
 ```
 &nbsp;

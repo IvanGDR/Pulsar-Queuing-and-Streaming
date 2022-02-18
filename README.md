@@ -94,6 +94,7 @@ Additionally, Pulsar allows TTL, a message will automatically be marked as ackno
 <p align="center">
 Fig. 4: Pulsar message retention policies.
 </p>
+
 &nbsp;
 ```
 !!! Fig 4 interpretation
@@ -103,6 +104,7 @@ Using retention policy, only grey cells can be marked as retained, for the confi
 
 On this topic partition subscription B has a TTL in place, cell M10 has been marked as aknowledged even if this cell has not been consumed yet.
 ```
+
 &nbsp;
 
 ## **Pulsar Arquitecture**

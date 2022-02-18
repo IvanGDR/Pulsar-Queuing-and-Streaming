@@ -89,7 +89,7 @@ Having said that, in Pulsar, messages can only be deleted after all the subscrip
 Additionally, Pulsar allows TTL, a message will automatically be marked as acknowledged if it is not consumed by any consumers within the configured TTL time period.
 &nbsp;
 <p align="center">
-<img width="600" height="https://user-images.githubusercontent.com/67383481/154717370-aa95330b-c0ac-4171-b500-5d8c6b3120a7.png")
+<img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717370-aa95330b-c0ac-4171-b500-5d8c6b3120a7.png")
 </p>
 <p align="center">
 Fig. 4: Pulsar message retention policies.
@@ -114,7 +114,7 @@ In order to configurate a highly available Pulsar multicluster, the following is
 - A global zookeeper cluster using local zookeeper nodes (Pulsar Configuration store multicluster metadata)
 &nbsp;
 <p align="center">
-<img width="600" height="https://user-images.githubusercontent.com/67383481/154717565-1270b79e-352f-4a89-a051-5ccec5037926.png")
+<img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717565-1270b79e-352f-4a89-a051-5ccec5037926.png")
 </p>
 <p align="center">
 Fig. 5: Pulsar arquitecture stack.

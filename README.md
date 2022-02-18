@@ -43,13 +43,16 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 </table>
 
 &nbsp;
-**1. Producer:** It is the application that sends messages to the topic and each message sent by the publisher is only stored once on a topic partition. It uses a Routing to determine which internal topic a message should be published to.
+**1. Producer:**
+It is the application that sends messages to the topic and each message sent by the publisher is only stored once on a topic partition. It uses a Routing to determine which internal topic a message should be published to.
 
 &nbsp;
-**2. Topic (partition):** It is the place where all the messages arrive. Each topic partition (stateless) is backed by a distributed log stored in Apache BookKeeper (stateful). The partition is the core resource in Pulsar, that performs the critical administrative operations inherited from the namespace in which it resides. Furthermore these namespaces can have a local or global scope. By default Pulsar Topics are created as non-partitioned but this can be modified to obtain high throughput to manage big data. As Producers and consumers are partition agnostic, a non-partitioned topic can be converted into partitioned on the fly (modifying the BROKER process), it is a pure administrative task.
+**2. Topic (partition):**
+It is the place where all the messages arrive. Each topic partition (stateless) is backed by a distributed log stored in Apache BookKeeper (stateful). The partition is the core resource in Pulsar, that performs the critical administrative operations inherited from the namespace in which it resides. Furthermore these namespaces can have a local or global scope. By default Pulsar Topics are created as non-partitioned but this can be modified to obtain high throughput to manage big data. As Producers and consumers are partition agnostic, a non-partitioned topic can be converted into partitioned on the fly (modifying the BROKER process), it is a pure administrative task.
 
 &nbsp;
-**3. Subscription:** Determines which consumer(s) a message should be delivered to. Each topic can have multiple subscriptions and a subscription can have one or more consumer group(s). There are three types of subscriptions that can co-exist on the same topic:
+**3. Subscription:**
+Determines which consumer(s) a message should be delivered to. Each topic can have multiple subscriptions and a subscription can have one or more consumer group(s). There are three types of subscriptions that can co-exist on the same topic:
 
 &nbsp;
 Exclusive Subscription
@@ -60,7 +63,8 @@ Shared Subscription
 : For ***queuing*** use case. Multiple consumers can be actived, allowing consumption in an unordered manner.
 
 &nbsp;
-**4. Consumer:** It is the application that reads messages from Pulsar. These are grouped together for consuming messages. Each consumer group can have its own way of consuming the messages.
+**4. Consumer:**
+It is the application that reads messages from Pulsar. These are grouped together for consuming messages. Each consumer group can have its own way of consuming the messages.
 
 &nbsp;
 ![792253ae.png](:storage/332cf97c-45ed-4849-824b-1c6de1ebd01b/0442fb10.png#center)

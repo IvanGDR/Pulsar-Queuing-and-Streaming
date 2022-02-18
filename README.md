@@ -60,7 +60,7 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 
 &nbsp;
 <p align="center">
-<img width="600" height="500" https://user-images.githubusercontent.com/67383481/154716613-59cbf35e-cf4f-45ff-bc58-69478348b31e.png>
+<img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154716613-59cbf35e-cf4f-45ff-bc58-69478348b31e.png">
 </p>
 <p align="center">
 Fig. 2: Apache Pulsar Model and Message Consumption

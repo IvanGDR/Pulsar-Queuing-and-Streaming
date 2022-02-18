@@ -52,7 +52,6 @@ In a lower level view, the Apache Pulsar Model is based on the following compone
 **3. Subscription:** Determines which consumer(s) a message should be delivered to. Each topic can have multiple subscriptions and a subscription can have one or more consumer group(s). There are three types of subscriptions that can co-exist on the same topic:
 
 &nbsp;
-
 Exclusive Subscription
 : For ***streaming*** use case. One consumer only in order to respect ordered consumption.
 Failover Subscription

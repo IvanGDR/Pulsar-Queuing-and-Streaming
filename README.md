@@ -1,5 +1,5 @@
 # Pulsar: Queuing and Streaming
-### All in One Messaging System
+### An All in One Messaging System
 ---
 #### :pencil2: Ivan Garcia / :calendar: Feb 2022 / :clock2: 15 min read
 ---

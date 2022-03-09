@@ -10,7 +10,7 @@ I would also like to focus this reading on what is Pulsar and how it works under
 
 &nbsp;
 ## What is Apache Pulsar?
-Apache Pulsar is an open-source distributed publish-subscrib messaging system with a robust, highly available, high performance streaming messaging platform, offering messaging **compsumtion**, **acknowledging** and **retention** facilities as well as **tenant implementation** options.
+Apache Pulsar is an open-source distributed publish-subscrib messaging system with a robust, highly available, high performance streaming messaging platform, offering messaging **consumption**, **acknowledging** and **retention** facilities as well as **tenant implementation** options.
 
 ## **Tenant Implementation**
 On a high level view, Apache Pulsar has been conceived to support multi-tenant deployments. The key pieces that allows this configuration topology are: **properties** and **namespaces**.

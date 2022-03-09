@@ -10,7 +10,7 @@ I would also like to focus this reading on what is Pulsar and how it works under
 
 &nbsp;
 ## What is Apache Pulsar?
-Apache Pulsar is an open-source distributed publish-subscrib messaging system whith a robust, highly available, high performance streaming messaging platform, offering messaging **compsumtion**, **acknowledging** and **retention** facilities as well as **tenant implementation** options.
+Apache Pulsar is an open-source distributed publish-subscrib messaging system with a robust, highly available, high performance streaming messaging platform, offering messaging **compsumtion**, **acknowledging** and **retention** facilities as well as **tenant implementation** options.
 
 ## **Tenant Implementation**
 On a high level view, Apache Pulsar has been conceived to support multi-tenant deployments. The key pieces that allows this configuration topology are: **properties** and **namespaces**.
@@ -68,17 +68,17 @@ Fig. 2: Apache Pulsar Model and Message Consumption
 &nbsp;
 
 ## **Message Acknowledgement**
-These implemetation policies apply in case there is a system failure situation and message(s) cannot be delivered in time. 
+These implementation policies apply in case there is a system failure situation and message(s) cannot be delivered in time. 
 
-Pulsar provides both **cummulative** acknowledgment and **individual** acknowledgment. In cummulative acknowledgement, any message before the acknowledged message will not be redelivered or consumed again. In individual acknowledgedment, only the messages marked as acknowledged will not be redelivered in the case of failure. 
+Pulsar provides both **cumulative** acknowledgment and **individual** acknowledgment. In cumulative acknowledgement, any message before the acknowledged message will not be redelivered or consumed again. In individual acknowledgement, only the messages marked as acknowledged will not be redelivered in the case of failure. 
 
-For both exclusive or failover subscriptions (streaming) cummulative or individual acknowledge can be applied. For shared subscription (queuing) only individual acknowledge is applicable.
+For both exclusive or failover subscriptions (streaming) cumulative or individual acknowledge can be applied. For shared subscription (queuing) only individual acknowledge is applicable.
 &nbsp;
 <p align="center">
 <img width="600" height="500" src="https://user-images.githubusercontent.com/67383481/154717167-c0d6053a-60e3-4416-bc38-9e5ba0323bd3.png")
 </p>
 <p align="center">
-Fig. 3: Cummulative (above) vs Individual (below) Message Acknowledgent, blue cells will be redelivered.
+Fig. 3: Cumulative (above) vs Individual (below) Message Acknowledgment, blue cells will be redelivered.
 </p>
 &nbsp;
 
@@ -101,19 +101,19 @@ Fig. 4: Pulsar message retention policies.
 Figure 4 shows how retention policies work with and without retention policy in place in a topic partition.
 Without retention policy, Grey cells can be deleted as these have been acknowledged by subscriptions A and B. 
 Blue cells cannot be deleted yet as not acknowledged by subscription A. 
-Green cells cannot be deleted as not acknoledged by any subscription.
+Green cells cannot be deleted as not acknowledged by any subscription.
 
 Using retention policy, only grey cells can be marked as retained, for the configured time period, as both 
 subscription A and B have consumed those messages.
 
-On this topic partition subscription B has a TTL in place, cell M10 has been marked as aknowledged even if
+On this topic partition subscription B has a TTL in place, cell M10 has been marked as acknowledged even if
 this cell has not been consumed yet.
 ```
 
 &nbsp;
 
 ## **Pulsar Arquitecture**
-In order to configurate a highly available Pulsar multicluster, the following is required:
+In order to configure a highly available Pulsar multicluster, the following is required:
 
 - A zookeeper ensemble (Local Zk for Pulsar and Bookeeper metadata and Global Zk for Store multicluster metadata)
 - A Bookeeper cluster (Stateful storage layer)
@@ -128,5 +128,5 @@ Fig. 5: Pulsar arquitecture stack.
 &nbsp;
 
 ## Conclusion
-In this firts part of a trio blog, I reviewed the principal concepts of Apache Pulsar, briefly considering a high and low level description and highlighting the main benefits that it offers, as for example, robust unified messaging system, streaming and queuing paradigms support, multi tenancy facilities, geo replication, retention policies, high avalaibility and big data performance amongst others.
-In my next blogs I will walk trhrough the installation of a high available Pulsar cluster and finally conclude the blog series with an overview of the logs location and analysis as an attemp to understand how the stack is being built up in order to troubleshoot and solve any potential connection problem that may happen within one or more of the components that Pulsar utilises.
+In this first part of a trio blog, I reviewed the principal concepts of Apache Pulsar, briefly considering a high and low level description and highlighting the main benefits that it offers, as for example, robust unified messaging system, streaming and queuing paradigms support, multi tenancy facilities, geo replication, retention policies, high availability and big data performance amongst others.
+In my next blogs I will walk trhrough the installation of a high available Pulsar cluster and finally conclude the blog series with an overview of the logs location and analysis as an attempt to understand how the stack is being built up in order to troubleshoot and solve any potential connection problem that may happen within one or more of the components that Pulsar utilises.
